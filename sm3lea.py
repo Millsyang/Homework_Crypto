@@ -65,15 +65,18 @@ secret = '1901210741'
 secret_len = len(secret)
 msg = input('Enter you message:')
 old_hash = sm3.sm3_hash(func.bytes_to_list(bytes(secret + msg.__str__(),encoding='utf-8')))
+print('hash of \''+msg+'\' : '+old_hash)
+
 #message want to add
 append_m = 'Length extension attack'
 new_msg_i = my_padding(func.bytes_to_list(bytes(secret + msg.__str__(),encoding='utf-8'))) \
           + func.bytes_to_list(bytes(append_m,encoding='utf-8'))
+print('Create a deceptive message.(\'A*\'+msg+padding+m\')')
+print('Appended message is : ' + str(func.list_to_bytes(new_msg_i)))
 
 new_hash = sm3.sm3_hash(new_msg_i)
 
-print('hash of \''+msg+'\' : '+old_hash)
-print('Create a deceptive message.(\'A*\'+msg+padding+m\')')
+
 print('We guess its hash is : '+sm3_Len_Extension_Attack(msg,secret_len,old_hash,append_m))
 print('And factually its hash is : '+new_hash)
 if new_hash == sm3_Len_Extension_Attack(msg,secret_len,old_hash,append_m):
