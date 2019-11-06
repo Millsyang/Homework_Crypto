@@ -20,4 +20,4 @@ oldhash转化为初始向量，对附加的消息加密，即可得到合法的h
 正确的消息得到的oldhash直接作为中间向量对后面的消息进行加密，从而得到构造消息的合法hash值。
 
 实验结果:
-![Image text](https://github.com/Millsyang/sm3-Length-extension-attack/blob/master/demo.png)
+![Image text](https://github.com/Millsyang/Homework_Crypto/blob/master/sm3ExtensionAttack/demo.png)
