@@ -8,4 +8,4 @@ sm4加密北大logo，见[SM4](https://github.com/Millsyang/Homework_Crypto/tree
 ##第三次作业 2019.11.6  
 1.ZUC S盒 DDT表和LAT表计算  
 2.解释final key mixing的必要性  
-见[Cryptanalysis]()
+见[Cryptanalysis](https://github.com/Millsyang/Homework_Crypto/tree/master/Cryptanalysis)
