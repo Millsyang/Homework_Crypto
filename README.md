@@ -1,6 +1,6 @@
 # 应用密码学作业
 ## 第一次作业  
-sm3消息扩展攻击和hash函数攻击调研,见[sm3ExtensionsAttack](https://github.com/Millsyang/Homework_Crypto/tree/master/sm3ExtensionAttack)  
+sm3消息扩展攻击和hash函数攻击调研,见[sm3ExtensionsAttack](./sm3ExtensionAttack)  
   
 ## 第二次作业  
 sm4加密北大logo，见[SM4](https://github.com/Millsyang/Homework_Crypto/tree/master/SM4)  
